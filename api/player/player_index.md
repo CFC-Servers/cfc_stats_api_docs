@@ -1,7 +1,7 @@
 ---
 title: "GET /api/player/<:steam_id_64>/"
 sidebar: mydoc_sidebar
-permalink: /api/player/get_index
+permalink: /api/player/player_index
 folder: mydoc
 ---
 
@@ -11,7 +11,7 @@ The index of a given player returns a JSON object containing information about t
 
 ## Example Response
 ```js
-{  
+{
     "id": 134,
     "steam_id": "STEAM_0:0:21170873",
     "created_at": "2019-07-11T07:36:45.000Z"

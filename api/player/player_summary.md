@@ -1,7 +1,7 @@
 ---
 title: "GET /api/player/<:steam_id_64>/summary"
 sidebar: mydoc_sidebar
-permalink: /api/player/get_summary
+permalink: /api/player/player_summary
 folder: mydoc
 ---
 
@@ -11,9 +11,9 @@ The `summary` endpoint returns a JSON object containing a curry of statistics, o
 
 ## Example Response
 ```js
-{  
+{
    "type":"summary",
-   "data":{  
+   "data":{
       "kills":6006,
       "kills_received":451,
       "suicides":672,
