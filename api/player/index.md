@@ -1,5 +1,5 @@
 ---
-title: "GET /api/player/
+title: "GET /api/player/"
 sidebar: mydoc_sidebar
 permalink: /api/player/index
 folder: mydoc
