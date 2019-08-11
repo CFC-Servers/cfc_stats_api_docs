@@ -59,10 +59,10 @@ if( !HasMadeRequest ) {
 if( httpClk() ) {
 	local response = httpData()
 
-	print( response )
-
-	#TODO: Parse the received JSON somehow
+	parsed = jsonParse(response)
 }
+
+interval(100)
 ```
 
 ## Lua
