@@ -30,9 +30,9 @@ entries:
       type: homepage
 
     - title: GET /
-      url: /get_index
+      url: /player_index
       output: web, pdf
 
     - title: GET /summary
-      url: /get_summary
+      url: /player_summary
       output: web, pdf
