@@ -7,12 +7,14 @@ folder: mydoc
 
 ## Description
 
-The player index returns a JSON object containing a positive phrase of encouragement
+The index of a given player returns a JSON object containing information about the player database object
 
 ## Example Response
 ```js
 {  
-    "response": "good job"
+    "id": 134,
+    "steam_id": "STEAM_0:0:21170873",
+    "created_at": "2019-07-11T07:36:45.000Z"
 }
 ```
 
@@ -20,6 +22,8 @@ The player index returns a JSON object containing a positive phrase of encourage
 
 Within the response, the following information is expected:
 
-|       Index        | Description                                                                                                     | Type     |
-|:------------------:|-----------------------------------------------------------------------------------------------------------------|----------|
-| `response`         | A positive phrase of encouragement                                                                              |  string  |
+|       Index        | Description                                                                                                     | Type      |
+|:------------------:|-----------------------------------------------------------------------------------------------------------------|-----------|
+| `id`               | The database id of the player                                                                                   |  integer  |
+| `steam_id`         | The Steam ID in of the player in 32-bit format                                                                  |  string   |
+| `created_at`       | ISO-8601 formatted datetime of when the player was created in the database                                      |  string   |
