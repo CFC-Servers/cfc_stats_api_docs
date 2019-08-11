@@ -42,8 +42,9 @@ Below are language-specific examples of how to interact with the API. They'll al
 
 ## E2
 ```lua
-#persist URL:string
-#persist HasMadeRequest
+@persist URL:string
+@persist HasMadeRequest
+
 if( first() ) {
 	runOnHTTP(1)
 	URL = "https://stats.cfcservers.org/api/v1/player/76561198002607474/summary"
