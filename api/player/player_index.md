@@ -25,5 +25,5 @@ Within the response, the following information is expected:
 |       Index        | Description                                                                                                     | Type      |
 |:------------------:|-----------------------------------------------------------------------------------------------------------------|-----------|
 | `id`               | The database id of the player                                                                                   |  integer  |
-| `steam_id`         | The Steam ID in of the player in 32-bit format                                                                  |  string   |
+| `steam_id`         | The Steam ID in of the player in standard format                                                                |  string   |
 | `created_at`       | ISO-8601 formatted datetime of when the player was created in the database                                      |  string   |
