@@ -42,27 +42,22 @@ Below are language-specific examples of how to interact with the API. They'll al
 
 ## E2
 ```lua
-@persist URL:string
-@persist HasMadeRequest
-
-if( first() ) {
-	runOnHTTP(1)
-	URL = "https://stats.cfcservers.org/api/v1/player/76561198002607474/summary"
-	HasMadeRequest = 0
+if(first()){
+    runOnHTTP(1)
+    
+    httpRequest("https://stats.cfcservers.org/api/v1/player/76561198002607474/summary")
 }
 
-if( !HasMadeRequest ) {
-	httpRequest(URL)
-	HasMadeRequest = 1
+if(httpClk()){
+    print(jsonDecode(httpData()))
 }
+```
 
-if( httpClk() ) {
-	local response = httpData()
-
-	parsed = jsonParse(response)
-}
-
-interval(100)
+## Starfall
+```lua
+http.get("https://stats.cfcservers.org/api/v1/player/76561198002607474/summary", function(body)
+    printTable(json.decode(body))
+end)
 ```
 
 ## Lua
