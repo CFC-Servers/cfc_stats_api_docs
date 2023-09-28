@@ -109,7 +109,7 @@ description: "Documentation for the CFC Statistics API"
 
 # needed for sitemap.xml file only
 url: https://cfc-servers.github.io/cfc_stats_api_docs
-baseurl: /
+baseurl: /cfc_stats_api_docs/
 
 permalink: pretty
 
